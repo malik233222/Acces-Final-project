@@ -1,57 +1,26 @@
 
-import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Home from './pages/home/Home';
-import Navbar from '../src/components/Navbar'
-// import Banner from './pages/home/Banner';
+import Layout from './components/Layout';
+import About from './pages/home/About';
+import Contact from './pages/home/Contact';
 
 function App() {
-  const Layout = () => {
-    return (
-      <>
-        <Navbar />
-
-
-        <Outlet />
-
-        {/* <Footer /> */}
-      </>
-
-    )
-  }
-
-  const router = createBrowserRouter([
-    {
-      path: '/',
-      element: <Layout />,
-      children: [
-        {
-          path: '/',
-          element: <Home />
-        },  
-        // {
-        //   path: "/banner",
-        //   element: <Banner />
-        // },
-        // burda olacaq about sehifesi zad duzelde bilsen
-
-
-
-      ]
-    },
-
-  ]);
+  
 
   return (
-
-    <RouterProvider router={router} />
-
-
-
-
-    //  <>
-    // <Outlet/>
-    //  </>
+    <>
+    <Router>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+        </Route>
+      </Routes>
+    </Router>
+  </>
   )
 }
 
