@@ -22,7 +22,7 @@ const Navbar = () => {
 
     ]
     return (
-        <header className='max-w-screen-2xl xl:px-28 px-4 bg-primayBG'>
+        <header className='max-w-screen-2xl xl:px-28 px-4 pb-8 bg-primayBG'>
             <nav className='flex justify-between items-center container md:py-4 pt-6 pb-3'>
                 <FaSearch className='text-Black w-5 h-5  cursor-pointer hidden md:block' />
 
