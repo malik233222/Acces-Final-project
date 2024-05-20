@@ -1,0 +1,81 @@
+[
+    {
+        "id": 1,
+        "title": "Adicolor Classics Joggers",
+        "category": "Dress",
+        "price": 63.85,
+        "image": "/Images/products/image1.png",
+        "status": "Best Selers"
+    },
+    {
+        "id": 2,
+        "title": "Nike Sportswear Futura Luxe",
+        "category": "Bag",
+        "price": 130.00,
+        "image": "/Images/products/image2.png",
+        "status": "Best Selers"
+    },
+    {
+        "id": 3,
+        "title": "Geometric print Scarf",
+        "category": "Dress",
+        "price": 53.00,
+        "image": "/Images/products/image3.png",
+        "status": "Best Selers"
+    },
+    {
+        "id": 4,
+        "title": "Yellow Reserved Hoodie",
+        "category": "Hoodies",
+        "price": 63.85,
+        "image": "/Images/products/image4.png",
+        "status": "New Arriaval"
+    },
+    {
+        "id": 5,
+        "title": "Basic Dress Green",
+        "category": "Dress",
+        "price": 236.00,
+        "image": "/Images/products/image5.png",
+        "status": "New Arriaval"
+    },
+    {
+        "id": 6,
+        "title": "Nike Air Zoom Pegasus",
+        "category": "Shoe",
+        "price": 198.00,
+        "image": "/Images/products/image6.png",
+        "status": "Best Selers"
+    },
+    {
+        "id": 7,
+        "title": "Nike Repel Miler",
+        "category": "Hoodies",
+        "price": 120.50,
+        "image": "/Images/products/image7.png",
+        "status": "Best Selers"
+    },
+    {
+        "id": 8,
+        "title": "Nike Sportswear Futura Luxe",
+        "category": "Glasses",
+        "price": 160.00,
+        "image": "/Images/products/image8.png"
+    },
+    {
+        "id": 9,
+        "title": "Leather Messenger Bag",
+        "category": "Bag",
+        "price": 220.00,
+        "image": "https://marksandspencer.com.ph/cdn/shop/products/SD_01_T01_1026C_Y0_X_EC_90.jpg?v=1673598246",
+        "status": "New Arrival"
+    },
+    {
+        "id": 10,
+        "title": "Canvas Backpack",
+        "category": "Bag",
+        "price": 80.00,
+        "image": "https://www.charleskeith.eu/dw/image/v2/BCWJ_PRD/on/demandware.static/-/Sites-ck-products/default/dwbe20beb1/images/hi-res/2021-L3-CK2-30781483-51-1.jpg?sw=756&sh=1008",
+        "status": "Best Sellers"
+    }
+]

@@ -5,6 +5,7 @@ import Home from './pages/home/Home';
 import Layout from './components/Layout';
 import About from './pages/home/About';
 import Contact from './pages/home/Contact';
+import SingleProduct from './pages/home/SingleProduct';
 
 function App() {
   
@@ -17,6 +18,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/shop/:id' element={<SingleProduct />} />
+
         </Route>
       </Routes>
     </Router>
