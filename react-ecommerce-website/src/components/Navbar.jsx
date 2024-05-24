@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaBars, FaSearch, FaShoppingBag, FaTimes, FaUser } from "react-icons/fa";
 import logo from "../../public/logo.png"
 import { Link } from 'react-router-dom';
+import { FaBasketShopping } from 'react-icons/fa6';
 
 const Navbar = () => {
 
@@ -31,8 +32,9 @@ const Navbar = () => {
 
                 {/* account and shopping btn */}
                 <div className='text-lg text-Black sm:flex items-center gap-4 hidden'>
-                    <a href="/" className='flex items-center gap-2'><FaUser /> Account </a>
-                    <a href="/" className='flex items-center gap-2'><FaShoppingBag /> Shopping </a>
+                    <Link to="/" className='flex items-center gap-2'><FaUser /> Account </Link>
+                    <Link to="/" className='flex items-center gap-2'><FaShoppingBag /> Shopping </Link>
+                    <Link to="/basket" className='flex items-center gap-2'><FaBasketShopping /> Basket </Link>
 
                 </div>
 

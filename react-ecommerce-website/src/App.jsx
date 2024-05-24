@@ -6,6 +6,7 @@ import Layout from './components/Layout';
 import About from './pages/home/About';
 import Contact from './pages/home/Contact';
 import SingleProduct from './pages/home/SingleProduct';
+import Basket from './pages/home/Basket';
 
 function App() {
   
@@ -19,6 +20,8 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/shop/:id' element={<SingleProduct />} />
+          <Route path='/basket' element={<Basket />} />
+
 
         </Route>
       </Routes>
