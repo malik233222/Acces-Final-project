@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FaArrowAltCircleRight, FaStar } from 'react-icons/fa';
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 const SingleProduct = () => {
   const { id } = useParams();
@@ -20,12 +20,18 @@ const SingleProduct = () => {
       }
     }
     fetchData()
+    window.scrollTo({top:0,behavior:'smooth'})
   }, [])
 
   const { title, category, price, image, status } = products
   return (
     <div className='  shadow-inner max-w-screen-2xl container mx-auto xl:px-28 px-4'>
       <div className='p-3 max-w-7xl m-auto'>
+        <div className='mt-5'>
+        <Link to="/" className='text-gray-600'>Home</Link>
+        <Link href="/shop" className='font-semibold'> / Shop</Link>
+        </div>
+
         <div className='mt-6 sm:mt-10'>
           <div className='grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-6 h-max'>
 
@@ -62,6 +68,12 @@ const SingleProduct = () => {
 
             </div>
           </div>
+        </div>
+
+        <div className='text-black/75 mt-12'>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem nulla minima nesciunt tempora quas? Dolore officiis impedit quas qui magni rerum! Provident, similique sit commodi blanditiis optio reiciendis quaerat minima?</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem nulla minima nesciunt tempora quas? Dolore officiis impedit quas qui magni rerum! Provident, similique sit commodi blanditiis optio reiciendis quaerat minima?</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem nulla minima nesciunt tempora quas? Dolore officiis impedit quas qui magni rerum! Provident, similique sit commodi blanditiis optio reiciendis quaerat minima?</p>
         </div>
       </div>
     </div>

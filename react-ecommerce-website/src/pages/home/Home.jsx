@@ -5,16 +5,18 @@ import Category from './Category'
 import Products from './Products'
 import Collections from './Collections'
 import BestSellers from './BestSellers'
+import Newletters from './Newletters'
 
 const Home = () => {
   return (
     <>
-    {/* <Navbar  /> */}
-    <Banner/>
-    <Category/>
-    <Products/>
-    <Collections/>
-    <BestSellers/>
+      {/* <Navbar  /> */}
+      <Banner />
+      <Category />
+      <Products />
+      <Collections />
+      <BestSellers />
+      <Newletters />
     </>
   )
 }
