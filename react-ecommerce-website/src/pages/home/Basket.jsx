@@ -1,4 +1,8 @@
+
+
+
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Basket = () => {
     const [basket, setBasket] = useState([]);
@@ -16,9 +20,19 @@ const Basket = () => {
         localStorage.setItem('basket', JSON.stringify(updatedBasket));
     };
 
+
+    const totalPrice = basket.reduce((acc, item) => {
+        return acc + (item.product.price * item.quantity);
+    }, 0);
+
     return (
-        <div className="container mx-auto p-4">
-            <h2 className="text-2xl font-semibold mb-4">Your Basket</h2>
+        <div className="max-w-screen-2xl mx-auto container xl:px-28 px-4 pt-3 pb-10 ">
+            <div className='mb-5'>
+                <Link to="/" className='text-gray-600'>Home</Link>
+                <Link href="/basket" className='font-semibold'> / Basket</Link>
+            </div>
+
+      
             {basket.length === 0 ? (
                 <p>Your basket is empty.</p>
             ) : (
@@ -45,6 +59,10 @@ const Basket = () => {
                             </div>
                         </div>
                     ))}
+                    <div className="border p-4 rounded-md shadow-md">
+                        <p className="text-lg font-semibold mb-2">Total Price: ${totalPrice}</p>
+
+                    </div>
                 </div>
             )}
         </div>
@@ -52,12 +70,3 @@ const Basket = () => {
 };
 
 export default Basket;
-
-
-
-
-
-{/* <div className='mt-5'>
-                    <Link to="/" className='text-gray-600'>Home</Link>
-                    <Link href="/basket" className='font-semibold'> / Basket</Link>
-                </div> */}
